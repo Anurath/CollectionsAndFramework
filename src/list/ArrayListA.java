@@ -1,6 +1,7 @@
 package list;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListA {
 
@@ -23,6 +24,8 @@ public class ArrayListA {
 		a2.add(100);
 		a2.addLast(500);
 		a2.addFirst(500);
+		
+		Collections.sort(a2);
 		System.out.println(a2);
 		System.out.println(a2.contains(500));
 		System.out.println(a2.lastIndexOf(40));
