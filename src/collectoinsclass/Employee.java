@@ -18,7 +18,7 @@ public class Employee implements Comparable<Employee> {
 	@Override
 	public String toString() {
 		return "Employee [name=" + name + ", age=" + age + ", empid=" + empid + ", sal=" + sal + ", address=" + address
-				+ "]";
+				+ "]";	
 	}
 
 	@Override
