@@ -1,8 +1,10 @@
 package comparator;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.PriorityQueue;
 import java.util.TreeSet;
 
 public class VillageDriver {
@@ -28,6 +30,10 @@ public class VillageDriver {
 		System.out.println(v1);
 		
 		
+		
+		
+		
+		
 		TreeSet<Village> t1 = new TreeSet<Village>(com);
 		
 		t1.add(new Village("Pathrud",5500,"Bhau Tikte",5));
@@ -35,5 +41,30 @@ public class VillageDriver {
 		t1.add(new Village("Girlgaon",500,"Bhau Tikte",5));
 		
 		System.out.println(t1);
+		
+		
+		
+		
+		
+		Village[] arr = new Village[3];
+		
+		arr[0] = new Village("Rampur", 3000,"Ramlal", 21);
+		arr[1] = new Village("Waki",2000,"Pavan Dhobe",15);
+		arr[2] = new Village("Mohari",1200,"Ram Shinde",11);
+		
+		Arrays.sort(arr,com);
+		
+		System.out.println(Arrays.toString(arr));
+		
+		PriorityQueue<Village> p1 = new PriorityQueue<Village>(com);
+		
+		p1.add(new Village("Pathardi",50500,"Revika Dethe",31));
+		p1.add(new Village("Anterwali",800,"Dagdu Patil",7));
+		p1.add(new Village("Beleshwar",1400,"Kamal Patil",9));
+		
+		System.out.println(p1);
+		
+		HashSet
+		
 	}
 }
