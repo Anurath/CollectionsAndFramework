@@ -63,8 +63,7 @@ public class VillageDriver {
 		p1.add(new Village("Beleshwar",1400,"Kamal Patil",9));
 		
 		System.out.println(p1);
-		
-		HashSet
+	
 		
 	}
 }
