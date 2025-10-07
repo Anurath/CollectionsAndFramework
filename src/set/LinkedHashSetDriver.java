@@ -34,7 +34,6 @@ public class LinkedHashSetDriver {
 		System.out.println(h1);
 		
 		h1.clear();
-		
-		TreeSet
+
 	}
 }
