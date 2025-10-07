@@ -1,5 +1,6 @@
 package queue;
 
+import java.util.ArrayList;
 import java.util.PriorityQueue;
 
 public class QueueDriver {
@@ -17,15 +18,47 @@ public class QueueDriver {
 //		System.out.println(p1);
 		
 		
+//		
+//		PriorityQueue<Student> p1 = new PriorityQueue<Student>();
+//		
+//		p1.add(new Student("Karan", 22, "PK", 12));
+//		p1.add(new Student("Anurath", 21, "BK", 13));
+//		p1.add(new Student("Aniket", 23, "DB", 15));
+//		p1.add(new Student("Anjali", 21, "ZP", 17));
+//		p1.add(new Student("Anuradha", 20, "DZ", 3));
+//		
+//		System.out.println(p1);
 		
-		PriorityQueue<Student> p1 = new PriorityQueue<Student>();
 		
-		p1.add(new Student("Karan", 22, "PK", 12));
-		p1.add(new Student("Anurath", 21, "BK", 13));
-		p1.add(new Student("Aniket", 23, "DB", 15));
-		p1.add(new Student("Anjali", 21, "ZP", 17));
-		p1.add(new Student("Anuradha", 20, "DZ", 3));
+//		PriorityQueue p1 = new PriorityQueue(5);
+//		
+//		p1.add(10);
+//		p1.add(20);
+//		p1.add(20);
+//		p1.add(5);
+//		p1.add(1);
+//		
+//		System.out.println(p1);
+//		
+		
+		
+		
+		ArrayList hList = new ArrayList();
+		
+		hList.add(new House(4, 2, 1200000,"Degdkar"));
+		hList.add(new House(3, 4, 800000,"Nikam"));
+		hList.add(new House(5, 5, 1000000,"Rani"));
+		hList.add(new House(2, 0, 900000,"Kamal"));
+		
+		System.out.println(hList);
+		
+		PriorityQueue p1 = new PriorityQueue(hList);
+		
 		
 		System.out.println(p1);
+		
+		
+		
+	
 	}
 }
