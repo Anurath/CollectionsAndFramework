@@ -1,5 +1,6 @@
 package queue;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
@@ -43,22 +44,65 @@ public class QueueDriver {
 		
 		
 		
-		ArrayList hList = new ArrayList();
+//		ArrayList hList = new ArrayList();
+//		
+//		hList.add(new House(4, 2, 1200000,"Degdkar"));
+//		hList.add(new House(3, 4, 800000,"Nikam"));
+//		hList.add(new House(5, 5, 1000000,"Rani"));
+//		hList.add(new House(2, 0, 900000,"Kamal"));
+//		
+//		System.out.println(hList);
+//		
+//		PriorityQueue p1 = new PriorityQueue(hList);
+//		
+//		
+//		System.out.println(p1);
+//		
 		
-		hList.add(new House(4, 2, 1200000,"Degdkar"));
-		hList.add(new House(3, 4, 800000,"Nikam"));
-		hList.add(new House(5, 5, 1000000,"Rani"));
-		hList.add(new House(2, 0, 900000,"Kamal"));
 		
-		System.out.println(hList);
+		ArrayDeque a = new ArrayDeque();
 		
-		PriorityQueue p1 = new PriorityQueue(hList);
+		a.add(10);
+		a.add(5);
+		a.add(200);
 		
 		
-		System.out.println(p1);
+		a.addLast(500);
 		
+		System.out.println(a);
 		
+		a.removeFirst();
+		System.out.println(a);
 		
+		a.addFirst(12);
+		System.out.println(a);
+		
+		a.removeLast();
+		System.out.println(a);
+		
+		System.out.println(a.pollFirst());
+		
+		System.out.println(a);
+		
+		System.out.println(a.pollLast());
+		
+		a.add(40);
+		a.add(25);
+		a.add(23);
+		a.add(59);
+		
+		System.out.println(a);
+		
+		a.push(118);
+		
+		System.out.println(a);
+		
+		a.pop();
+		
+		System.out.println(a);
+		
+		System.out.println(a.getFirst());
+		System.out.println(a.getLast());
 	
 	}
 }
