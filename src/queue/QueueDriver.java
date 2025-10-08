@@ -89,6 +89,8 @@ public class QueueDriver {
 		a.add(40);
 		a.add(25);
 		a.add(23);
+		a.add(40);
+		a.add(25);
 		a.add(59);
 		
 		System.out.println(a);
@@ -103,6 +105,11 @@ public class QueueDriver {
 		
 		System.out.println(a.getFirst());
 		System.out.println(a.getLast());
+		
+		
+		a.removeFirstOccurrence(40);
+		
+		System.out.println(a);
 	
 	}
 }
