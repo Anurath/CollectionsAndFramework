@@ -1,6 +1,7 @@
 package comparator;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class CountryDriver {
 	public static void main(String[] args) {
@@ -14,6 +15,12 @@ public class CountryDriver {
 		c1.add(new Country("France", "Paris", "Emmanuel Macron", 33));
 		
 		System.out.println(c1);
+		
+		LinkedList l1 = new LinkedList(c1);
+		
+		System.out.println(l1);
+		
+		
 	}
 
 }
