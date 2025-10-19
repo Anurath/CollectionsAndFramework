@@ -1,10 +1,13 @@
 package map;
 
 import java.util.HashMap;
+import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
 public class CommonDriver {
+
+	
 
 	public static void main(String[] args) {
 		
@@ -41,10 +44,30 @@ public class CommonDriver {
 		
 		teachers1.putAll(teachers);
 		
-		System.out.println(teachers1);
+//		System.out.println(teachers1);
 		
 		Set<Map.Entry<Integer,String>> entries = teachers1.entrySet();
 		
-		System.out.println(entries);
+//		System.out.println(entries);
+		
+		
+		
+		
+		
+		Set<Integer> keys = teachers1.keySet();
+		
+//		System.out.println(keys);
+		
+		Collection<String> values = teachers1.values();
+		
+//		System.out.println(values);
+		
+		
+//		System.out.println(teachers1.containsKey(1));
+		
+		System.out.println(teachers1.containsValue("Navale"));
+		
+		
+		
 	}
 }
