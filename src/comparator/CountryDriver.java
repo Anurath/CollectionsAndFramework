@@ -1,5 +1,6 @@
 package comparator;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
@@ -53,10 +54,7 @@ public class CountryDriver {
 		
 		t1.addAll(c1);
 		System.out.println(t1.size());
-		
-		
-		LinkedList
-		
+
 		
 		
 	}
