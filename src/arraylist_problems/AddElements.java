@@ -22,6 +22,7 @@ public class AddElements {
 		
 		name.set(3, "Amit");
 		System.out.println(name);
+		
 
 		System.out.println(name.get(2));
 
@@ -42,6 +43,7 @@ public class AddElements {
 		}
 		nums.add(40);
 		
+		System.out.println(nums.contains(40));
 		
 		System.out.println(sum);
 	}
