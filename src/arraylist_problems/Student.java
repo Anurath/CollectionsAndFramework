@@ -1,6 +1,6 @@
 package arraylist_problems;
 
-public class Student {
+public class Student implements Comparable<Student> {
 
 	int id;
 	String name;
@@ -20,5 +20,20 @@ public class Student {
 	public String toString()
 	{
 		return "Student [Id: "+id+",Name: "+name+",Age: "+age+",Score: "+score+"]";
+	}
+	
+	public int compareTo(Student o)
+	{
+		if(this.name.compareTo(o.name)>0)
+		{
+			return 1;
+		}
+		else if(this.name.compareTo(o.name)==0)
+		{
+			return 0;
+		}
+		
+		return -1;
+
 	}
 }
